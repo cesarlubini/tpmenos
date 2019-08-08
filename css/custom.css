@@ -1,0 +1,765 @@
+/*CSS GLOBAL E UTILIDADES//////////////////////////////////////////////////////////*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body {
+  font-size:17px;
+  font-family: 'Montserrat', sans-serif;
+  color:#565656;
+  position: relative;
+}
+
+.normal-text {
+  font-weight: normal;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.cor-rosa {
+  color:#c50372
+}
+
+.cor-azul {
+  color:#0595b0;
+}
+
+.cor-branco {
+  color:#fff;
+}
+
+.cor-amarelo {
+  color:#ffb402;
+}
+
+.margin-auto {
+margin:0 auto;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  50% { transform: scale(0.85); }
+  to { transform: scale(1); }
+}
+
+.btn-pulse {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.btn-amarelo {
+  background-color: #ffb402;
+  color:#075e83;
+  font-weight:bold;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+  padding: 18px 32px;
+}
+
+.bg-rosa {
+  background-color:#c50372;
+}
+
+h2 {
+  font-size:2.5em;
+  font-weight:bold; 
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+.btn-verde {
+  background-color:#45c093;
+  color:#fff;
+  padding: 18px 50px;
+  margin: 50px 0;
+}
+
+.btn-verde:focus, .btn-verde:hover {
+  background-color:#318868;
+  color:#fff;
+}
+
+.visible {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/*ICONES///////////////////////////////////////////////////////////////////////////*/
+
+.icones {
+  background-image: url(../img/icones.png);
+  background-repeat: no-repeat;
+  padding:32px;
+}
+
+.icones-cofre {
+  background-position:0px 0px;
+}
+
+.icones-confiavel {
+  background-position:-64px 0px;
+}
+
+.icones-seguro {
+  background-position:-128px 0px;
+}
+
+.icones-entrega {
+  background-position:-192px 0px;
+}
+
+.icones-seguranca {
+  background-position:-256px 0px;
+}
+
+.icones-cartao {
+  background-position:-320px 0px;
+}
+
+.icones-privacidade {
+  background-position:-384px 0px;
+}
+
+/*HEADER///////////////////////////////////////////////////////////////////////////*/
+
+.navbar-toggle {
+  top:20px;
+}
+
+.navbar-toggle .icon-bar {
+  background-color:#fff;
+}
+
+.navbar-brand, .navbar-nav li a {
+  line-height: 70px;
+  height: 70px;
+}
+
+.navbar-brand img {
+  width:150px;
+}
+
+.navbar-nav li a {
+  color:#fff;
+  padding-top: 0;
+  text-shadow: none;
+}
+
+.navbar-nav li:not(:last-child) a::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 40px;
+  border-right: 1px solid #a6264a;
+  position: relative;
+  top: 15px;
+  right: -15px;
+}
+
+.nav>li>a:focus, .nav>li>a:hover, .navbar-nav li.active a {
+  background-color: transparent;
+  color: #fff;
+  /* color: #44c2da; */
+}
+
+.navbar{
+  border-radius:0;
+  margin-bottom:0px;
+}
+
+
+/*PRIMEIRA DOBRA///////////////////////////////////////////////////////////////////*/
+main .margin-top-20{
+  margin-top:20px
+}
+
+main.banner {
+  background-color: #44c2da;
+  height: calc(100vh - 70px);
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-pote {
+  width: 80%;
+  margin:20px auto 0;
+}
+
+.alinhar-imgs-banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.selos, .selos-preco {
+  display:flex;
+  justify-content: center;
+}
+.selos img {
+  padding:0 15px;
+  width: 30%;
+  height: 30%;
+}
+
+h1.titulo-principal {
+  max-width: 18ch;
+  font-size:2.5em;
+  font-weight:bold;
+  color:#fff;
+}
+
+ul.lista-vantagens {
+  list-style-image: url(../img/checklist.png);
+  margin:20px 0;
+}
+
+ul.lista-vantagens li {
+  line-height: 45px;
+  color:#fff;
+}
+
+.separador-diagonal {
+  width: 100%;
+  height: 140px;
+  background-color: #44c2da;
+  transform: skew(0deg,-3deg);
+  position: relative;
+  top: -70px;
+  z-index: -1;
+}
+/*SEÇÃO DE INFORMAÇÕES/////////////////////////////////////////////////////////////*/
+
+.tab-content-informacoes {
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+.tab-content-informacoes p {
+  font-size: 0.9em;
+}
+
+.box-tab-informacoes {
+  box-shadow: 0px 0px 50px #e8e8e8;
+  min-height: 580px;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+.box-tab-informacoes ul.nav.nav-tabs li {
+  width:50%;
+}
+
+.box-tab-informacoes .nav-tabs>li>a, .box-tab-informacoes .nav>li>a:focus, .box-tab-informacoes .nav>li>a:hover {
+  margin-right: 0px;
+  line-height: 2.5em;
+  border: none;
+  border-radius: 0px;
+  background-color: #fff;
+  color:#c50372;
+  text-align: center;
+}
+
+.box-tab-informacoes .nav-tabs>li.active>a, .box-tab-informacoes .nav-tabs>li.active>a:focus, .box-tab-informacoes .nav-tabs>li.active>a:hover {
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #c50372;
+  border: none;
+
+}
+
+.bar-after-title::after {
+  content: "";
+  display: block;
+  width:45%;
+  height:5px;
+  margin:30px 0;
+  background-color:#c50372;
+}
+
+/*VIDEO////////////////////////////////////////////////////////////////////////////*/
+.video-dores {
+  background-color:#d22874;
+}
+
+.video-dores video {
+  width:100%;
+  height: auto;
+  vertical-align: middle
+}
+
+/*PARALLAX BENEFICIOS//////////////////////////////////////////////////////////////*/
+#beneficios-tpmenos {
+  background: url(../img/parallax.jpg) 50% 0 fixed;
+  position: relative;
+}
+
+#beneficios-tpmenos, #beneficios-tpmenos .container-fluid .row {
+  height:200px;
+}
+
+/*BENEFICIOS///////////////////////////////////////////////////////////////////////*/
+
+.beneficio-item {
+  padding: 0px 55px;
+  margin: 65px 0;
+}
+
+.beneficio-item h3 {
+  margin:35px 0;
+  font-weight: bold;
+}
+
+.beneficio-item h3 {
+  font-size: 1.1177em;
+}
+
+.beneficio-item p {
+  font-size: 0.9em;
+}
+
+.img-circle {
+  border: 15px solid #fff;
+  box-shadow:0px 0px 50px #ccc;
+}
+
+
+
+.testemunhal {
+  background-color: #44c2da;
+  padding:50px 0;
+}
+
+.testemunhal h2 {
+  padding-bottom:30px;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+}
+
+.carousel-indicators {
+  bottom: -25px;
+}
+
+.testemunhal-box {
+  background-color: #fff;
+  height:400px;
+  padding:30px;
+  margin:50px 0;
+  box-shadow: 0px 0px 10px #3493a5;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*INFO PEDIDOS/////////////////////////////////////////////////////////////////////*/
+
+.info-pedidos {
+  background-color:#c50372;
+}
+
+.pedidos-texto-wrap {
+  padding: 0 10%;
+  margin: 50px 0 0;
+}
+
+.pedidos-texto-wrap h2 {
+  font-size:2em;
+}
+
+.pedidos-itens {
+  margin: 50px -15px 0;
+}
+
+.pedidos-itens p {
+  margin:0;
+  padding-left:15px;
+  font-size:0.8em
+}
+
+.pedidos-img-wrap {
+  background-image: url('../img/bg-info-pedidos.jpg');
+  background-position: center center;
+  background-size: cover;
+  height:100%;
+  margin: 0 -15px;
+}
+
+
+
+/*TABELA PREÇOS////////////////////////////////////////////////////////////////////*/
+
+.tabela-preco {
+  position:relative;
+  background-color: #efefef;
+  padding-bottom:50px;
+}
+
+.row.tabela-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mais-vendido-titulo {
+  margin-bottom: 10px;
+}
+
+.mais-vendido-titulo p, .mais-vendido-titulo span.glyphicon {
+  font-size:1.5em;
+}
+
+.preco-header {
+  padding:50px 0;
+}
+
+.preco-header span {
+  font-size:1.5em;
+}
+
+.box-preco {
+  box-shadow: 0 0 10px #ccc6;
+  border-radius:10px;
+  padding: 20px 0px 30px;
+  background-color: #fff;
+}
+
+.mais-vendido {
+  border:2px solid #ffb402;
+}
+
+.img-pote-preco {
+  margin:20px auto;
+}
+
+.tabela-preco::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid #efefef;
+  position: absolute;
+  bottom: -25px;
+  left: calc(50% - 50px);
+}
+
+.selos-precos .col-md-4:not(:last-child)::after {
+  content: "";
+  height: 100%;
+  border-right: 1px solid #565656;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.selos-precos p {
+  margin: 20px 0;
+}
+
+/*PERGUNTAS FREQUENTES/////////////////////////////////////////////////////////////*/
+
+.perguntas-frequentes {
+  padding:50px 0;
+}
+
+.perguntas-frequentes h2 {
+  padding-bottom:30px;
+}
+
+.panel-group .panel {
+  margin: 20px;
+  box-shadow: 0 0 20px #ab0062;
+}
+
+.panel-heading {
+  padding:0px;
+}
+
+.panel-default>.panel-heading,.panel-default>.panel-heading {
+  background: none;
+}
+
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+  border:none;
+}
+
+.perguntas-frequentes .panel-title {
+  font-size: 1.1177em;
+}
+
+.perguntas-frequentes h3 {
+  display:inline-block;
+}
+
+.perguntas-frequentes span {
+  float:right;
+}
+
+.perguntas-frequentes a, .perguntas-frequentes a:hover {
+  text-decoration: none;
+  color:#565656;
+  display: inline-block;
+  width: 100%;
+  padding: 30px 20px;
+}
+
+/*DUVIDAS//////////////////////////////////////////////////////////////////////////*/
+
+.duvida-container {
+  background-color:#44c2da;
+  background-image: url("../img/duvidas.jpg");
+  background-position-x:right;
+  background-repeat: no-repeat;
+  height:250px;
+}
+
+.duvida-container h2 {
+  font-size: 2em;
+}
+
+.duvida-container p {
+  font-size: 1.5em;
+}
+
+/*FOOTER///////////////////////////////////////////////////////////////////////////*/
+
+footer {
+  background-color: #0595b0;
+  padding:10px;
+}
+
+footer p {
+  color:#fff;
+  font-size:0.7em;
+  margin:5px 0;
+}
+
+
+/*MEDIA QUERY//////////////////////////////////////////////////////////////////////*/
+
+@media (max-width:992px) {
+  .no-display-mobile {
+    display:none;
+  }
+
+  .navbar-brand, .navbar-nav li a {
+    font-size: 0.85em;
+  }
+
+  .banner .row-eq-height {
+    align-items: center;
+  }
+
+  ul.lista-vantagens li {
+    font-size:0.9em;
+    line-height: 2em;
+  }
+
+  .video-dores .container {
+    width:100%;
+  }
+
+  #beneficios-tpmenos .vertical-align {
+    justify-content: center;
+  }
+
+  .beneficio-item p {
+    font-size: 1em;
+  }
+
+  .carousel-control.left {
+    left:5px
+  }
+
+  .carousel-control.right {
+    right: -24px;
+  }
+
+  .pedidos-texto-wrap h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .box-preco {
+    margin: 0 auto;
+  }
+
+  .tabela-preco::after {
+    bottom: -20px;
+  }
+
+  #unidade-5 {
+    order:-1;
+  }
+}
+
+@media (max-width:767px) {
+
+  ul.nav.navbar-nav.navbar-right {
+    text-align: center;
+  }
+
+  .navbar-nav li:not(:last-child) a::after {
+    content: "";
+    border-right: none;
+    border-bottom: 1px solid #a6264a;
+    width: 100%;
+    top: -50px;
+    right: 0px;
+  }
+
+  main.banner, .row-eq-height {
+    display: block;
+    height: auto;
+  }
+
+  .beneficios {
+    margin-top:65px;
+  }
+
+  .beneficio-item {
+    padding-bottom:0px;
+    margin: 0 0 65px;
+  }
+
+  .carousel-control.right {
+    right:0;
+  }
+
+  .carousel-control.left {
+    left:0
+  }
+
+  .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+    display: none;
+  }
+
+
+  .pedidos-itens {
+    margin: 0;
+  }
+
+  .testemunhal-box {
+    height: 450px;
+    padding: 10px 30px 30px;
+    font-size: 0.85em;
+}
+
+  .pedidos-texto-wrap h2, .pedidos-itens .col-md-6 {
+    margin-bottom:30px;
+  }
+
+  .selos-precos p {
+    font-size:0.6em
+  }
+
+  .selos-precos .col-md-4:not(:last-child)::after {
+    height: 50px;
+    top: 25px;
+  }
+
+  .perguntas-frequentes .panel-title {
+    font-size: 1em;
+  }
+
+  .perguntas-frequentes p {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width:420px) {
+  h2 {
+    font-size:2em;
+    font-weight:bold; 
+  }
+
+  .navbar-fixed-top .navbar-collapse {
+    max-height: 600px;
+  }
+
+  h1.titulo-principal {
+    max-width: 50ch;
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .alinhar-imgs-banner {
+    display:block;
+  }
+
+  .selos {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .selos .img-responsive {
+    width: 30%;
+    display: inline-block;
+  }
+
+  .tab-content-informacoes h2 {
+    font-size: 1.5em;
+  }
+
+  .testemunhal-box {
+    height: 500px;
+  }
+
+  .pedidos-texto-wrap h2 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .preco-header span {
+    font-size: .9em;
+  }
+
+  .box-preco img:not(.img-pote-preco) {
+    width:70%;
+  }
+
+  .selos-precos img {
+    width:50%;
+  }
+
+  .perguntas-frequentes .panel-title, .perguntas-frequentes p, table {
+    font-size: 0.8em;
+  }
+
+  .duvida-container h2, .duvida-container p {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 0.6em;
+  }
+}
